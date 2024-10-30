@@ -10,7 +10,7 @@ string nombre,id,apellidoMA,apellidoPA;
     cout << "   Bienvenido al Centro de informacion de Inter Bayamon" << endl;
     cout << " |---------------{ Seleccione una opcion }---------------| " << endl ;
     cout << " " << endl;
-    cout <<" 1. Matricularse " << endl;
+    cout <<" 1. Registrarse " << endl;
     cin >> option;
     
     
