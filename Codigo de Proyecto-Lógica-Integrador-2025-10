@@ -3,14 +3,37 @@ using namespace std;
 
 int main() { 
 
-
-
-
-
-
-
-
-
-return 0;
+string nombre,id,apellidoMA,apellidoPA;
+    int option;
+    
+    cout << " |-------------------------------------------------------| " << endl ;
+    cout << "   Bienvenido al Centro de informacion de Inter Bayamon" << endl;
+    cout << " |---------------{ Seleccione una opcion }---------------| " << endl ;
+    cout << " " << endl;
+    cout <<" 1. Matricularse " << endl;
+    cin >> option;
+    
+    
+    switch (option) {
+    
+    case 1:
+    cout << " Ingrse su nombre : " ;
+    cin >> nombre;
+    
+      cout << " Ingrese su apellido Paterno: " ;
+    cin >> apellidoPA;
+    
+    cout << " Ingrese su apellido Materno: " ;
+    cin >> apellidoMA;
+    
+   
+    
+    cout << " Numero de estudiante: " ;
+    cin >> id;
+    
+    cout << " Usteda se acaba de registar como: " << apellidoPA << " " << apellidoMA << " " << nombre << " | ID #" << id << endl; 
+    
+    }
+    return 0;
 
 }
