@@ -1,39 +1,83 @@
-#include<iostream>
+#include <iostream>
+#include <string>
 using namespace std;
 
+void setColor(int color) {
+    // Secuencias de escape ANSI para cambiar el color ( Pedro :])
+    cout << "\033[" << color << "m";
+}
+
 int main() { 
-
-string nombre,id,apellidoMA,apellidoPA;
+    // Aqui declaramos las variables ( Pedro :] )
+    string nombre, id, apellidoMA, apellidoPA;
     int option;
-    
-    cout << " |-------------------------------------------------------| " << endl ;
-    cout << "   Bienvenido al Centro de informacion de Inter Bayamon" << endl;
-    cout << " |---------------{ Seleccione una opcion }---------------| " << endl ;
-    cout << " " << endl;
-    cout <<" 1. Registrarse " << endl;
-    cin >> option;
-    
-    
-    switch (option) {
-    
-    case 1:
-    cout << " Ingrse su nombre : " ;
-    cin >> nombre;
-    
-      cout << " Ingrese su apellido Paterno: " ;
-    cin >> apellidoPA;
-    
-    cout << " Ingrese su apellido Materno: " ;
-    cin >> apellidoMA;
-    
-   
-    
-    cout << " Numero de estudiante: " ;
-    cin >> id;
-    
-    cout << " Usteda se acaba de registar como: " << apellidoPA << " " << apellidoMA << " " << nombre << " | ID #" << id << endl; 
-    
-    }
-    return 0;
 
+    // Aqui se creo el menu de inicio y decoracion ( Pedro :] )
+    setColor(93); // Cambiamos el color amarillo ( Pedro :] )
+
+    cout << " |-------------------------------------------------------| " << endl;
+    cout << "   Bienvenido al Centro de informacion de Inter Bayamon" << endl;
+    cout << " |---------------{ Seleccione una opcion }---------------| " << endl;
+    cout << " " << endl;
+
+    setColor(95); // Cambiamos el color ( Pedro :] )
+    cout << " 1.)  Ingresar " << endl;
+    cout << " 2.)  Informacion sobre beca( FASFA 24/25 ) " << endl;
+    cout << " " << endl;
+
+    cout << " Selecione : ";
+    cin >> option;
+
+    // Creamos el switch ( Pedro :} )
+    switch (option) {
+        // Hacemos que el usuario ingrese a la seccion ( Pedro :} )
+        case 1:
+            cout << " Ingrese su nombre : ";
+            cin >> nombre;
+
+            cout << " Ingrese su apellido Paterno: ";
+            cin >> apellidoPA;
+
+            cout << " Ingrese su apellido Materno: ";
+            cin >> apellidoMA;
+
+            cout << " Numero de estudiante: ";
+            cin >> id;
+            
+            cout << " " << endl;
+            // Comprobar la longitud del ID ( Pedro :] )
+            if (id.length() > 9) {
+                setColor(31);
+                cout << "|Invalido| Maximo de caracteres validos es de 9 Intente de nuevo." << endl;
+            } else {
+                setColor(93); // Cambia el color amarillo ( Pedro :] )
+                cout << " ********************************************************************************************* " << endl;
+                cout << " Usted acaba de ingresar como: " << nombre << " " << apellidoPA << " " << apellidoMA << " " << " | ID #" << id << endl; 
+                cout << " ******************************************************************************************** " << endl;
+                setColor(0); // Ponemos el color normal ( Pedro ;} )
+            }
+            break; 
+
+        case 2: 
+            setColor(93);
+            // Información de la FAFSA ( Pedro :] )
+            cout << " " << endl;
+            cout << " FASFA  " << endl;
+            cout << " " << endl;
+            cout << "  En el pasado, la solicitud FAFSA abría anualmente el 1 de octubre. Este año ese no será el caso. La \n";
+            cout << "  apertura de la solicitud FAFSA 2024-2025 será en algún momento de diciembre de 2023, aún no hay una \n";
+            cout << "  fecha específica. \n";
+            cout << " " << endl;
+
+            cout << " FASFA ID " << endl;
+            cout << " " << endl;
+            cout << " Tanto los estudiantes como los padres deben crear una Cuenta de Ayuda Estudiantil para obtener\n";
+            cout << " una FSA ID antes de completar el formulario. " << endl;
+            break; 
+
+        default:
+            cout << " Opción no válida. Por favor ingrese 1 o 2 Gracias!!." << endl;
+    }
+
+    return 0;
 }
