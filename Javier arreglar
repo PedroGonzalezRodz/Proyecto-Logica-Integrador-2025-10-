@@ -22,8 +22,8 @@ int main() {
 
      // Igresamos al usuario ( Javier )
  setColor(93);
-    cout << " Ingrese su usuario: ";
-    cin>> user;
+     cout << "Ingrese su usuario: ";
+    cin >> user;
     cout << "Ingrese su contraseña: ";
     cin >> cont;
         
@@ -36,22 +36,27 @@ int main() {
 
     cout << " Selecione : ";
     cin >> option;
+    
+    
 
     // Creamos el switch ( Pedro :} )
     switch (option) {
         // Hacemos que el usuario ingrese a la seccion ( Pedro :} )
         case 1:
             //Revisar si esta correcta la contrasena ( Javier )
-            cout << "¿Cuál es tu contraseña? "; 
-            cin >> ver;
+            
             cout << "¿Cuál es tu user? "; 
             cin >> uservr;
-                
-                while (user != uservr) { 
+            
+            while (user != uservr) { 
                 setColor(31);
                 cout << "Este user no es correcto, ingrese otra vez: ";
-                cin >> ver;
+                cin >> uservr;
             }
+            setColor(95);
+            cout << "¿Cuál es tu contraseña? "; 
+            cin >> ver;    
+                
                 while (ver != cont) { 
                 setColor(31);
                 cout << "Esta contraseña no es correcta, ingresa otra: ";
