@@ -8,8 +8,8 @@ void setColor(int color) {
 }
 
 int main() { 
-    // Aqui declaramos las variables ( Pedro :] )
-    string nombre, id, apellidoMA, apellidoPA;
+    // Aqui declaramos las variables ( Pedro :] y Javier )
+    string nombre, id, apellidoMA, apellidoPA, cont, ver, user, uservr;
     int option;
 
     // Aqui se creo el menu de inicio y decoracion ( Pedro :] )
@@ -20,6 +20,15 @@ int main() {
     cout << " |---------------{ Seleccione una opcion }---------------| " << endl;
     cout << " " << endl;
 
+     // Igresamos al usuario ( Javier )
+ setColor(93);
+     cout << "Ingrese su usuario: ";
+    cin >> user;
+    cout << "Ingrese su contraseña: ";
+    cin >> cont;
+        
+  
+
     setColor(95); // Cambiamos el color ( Pedro :] )
     cout << " 1.)  Ingresar " << endl;
     cout << " 2.)  Informacion sobre beca( FASFA 24/25 ) " << endl;
@@ -27,14 +36,40 @@ int main() {
 
     cout << " Selecione : ";
     cin >> option;
+    
+    
 
     // Creamos el switch ( Pedro :} )
     switch (option) {
         // Hacemos que el usuario ingrese a la seccion ( Pedro :} )
         case 1:
+            //Revisar si esta correcta la contrasena ( Javier )
+            
+            cout << "¿Cuál es tu user? "; 
+            cin >> uservr;
+            
+            while (user != uservr) { 
+                setColor(31);
+                cout << "Este user no es correcto, ingrese otra vez: ";
+                cin >> uservr;
+            }
+            setColor(95);
+            cout << "¿Cuál es tu contraseña? "; 
+            cin >> ver;    
+                
+                while (ver != cont) { 
+                setColor(31);
+                cout << "Esta contraseña no es correcta, ingresa otra: ";
+                cin >> ver;
+            }
+            
+                
+            
+                //Ingresamos ( Pedro ;] )
+                setColor(95);
             cout << " Ingrese su nombre : ";
             cin >> nombre;
-
+            
             cout << " Ingrese su apellido Paterno: ";
             cin >> apellidoPA;
 
@@ -81,3 +116,4 @@ int main() {
 
     return 0;
 }
+
