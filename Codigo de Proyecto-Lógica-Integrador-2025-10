@@ -3,20 +3,20 @@
 using namespace std;
 
 void setColor(int color) {
-    // Secuencias de escape ANSI para cambiar el color ( Pedro :])
+    // Secuencias de escape para cambiar el color ( Pedro :])
     cout << "\033[" << color << "m";
 }
 
 int main() { 
     // Aqui declaramos las variables ( Pedro :] y Javier )
-    string nombre, id, apellidoMA, apellidoPA, cont, ver, user, uservr;
+    string nombre, id, apellidoMA, apellidoPA, cont, ver, user, uservr, SS;
     int option;
 
     // Aqui se creo el menu de inicio y decoracion ( Pedro :] )
     setColor(93); // Cambiamos el color amarillo ( Pedro :] )
 
     cout << " |-------------------------------------------------------| " << endl;
-    cout << "   Bienvenido al Centro de informacion de Inter Bayamon" << endl;
+    cout << "      Bienvenido al Centro de FASFA de Inter Bayamon" << endl;
     cout << " |---------------{ Seleccione una opcion }---------------| " << endl;
     cout << " " << endl;
 
@@ -29,9 +29,11 @@ int main() {
         
   
 
-    setColor(95); // Cambiamos el color ( Pedro :] )
-    cout << " 1.)  Ingresar " << endl;
+    setColor(95); 
+    // Opciones 1,2 y 3 ( Javier )
+    cout << " 1.)  Solicitar FASFA  " << endl;
     cout << " 2.)  Informacion sobre beca( FASFA 24/25 ) " << endl;
+    cout << " 3.)  Salir " << endl;
     cout << " " << endl;
 
     cout << " Selecione : ";
@@ -39,13 +41,13 @@ int main() {
     
     
 
-    // Creamos el switch ( Pedro :} )
-    switch (option) {
         // Hacemos que el usuario ingrese a la seccion ( Pedro :} )
+    switch (option) {
+ 
         case 1:
             //Revisar si esta correcta la contrasena ( Javier )
             
-            cout << "¿Cuál es tu user? "; 
+            cout << "Ingrese su user: "; 
             cin >> uservr;
             
             while (user != uservr) { 
@@ -54,7 +56,7 @@ int main() {
                 cin >> uservr;
             }
             setColor(95);
-            cout << "¿Cuál es tu contraseña? "; 
+            cout << "Ingrese su contraseña: "; 
             cin >> ver;    
                 
                 while (ver != cont) { 
@@ -85,11 +87,18 @@ int main() {
                 setColor(31);
                 cout << "|Invalido| Maximo de caracteres validos es de 9 Intente de nuevo." << endl;
             } else {
-                setColor(93); // Cambia el color amarillo ( Pedro :] )
-                cout << " ********************************************************************************************* " << endl;
-                cout << " Usted acaba de ingresar como: " << nombre << " " << apellidoPA << " " << apellidoMA << " " << " | ID #" << id << endl; 
-                cout << " ******************************************************************************************** " << endl;
-                setColor(0); // Ponemos el color normal ( Pedro ;} )
+                setColor(93); 
+                cout << " *************************************************************************************************** " << endl;
+                cout << " Usted acaba de registrarse para solicitud de FAFSA como: " << nombre << " " << apellidoPA << " " << apellidoMA << " " << " | ID #" << id << endl; 
+                cout << " *************************************************************************************************** " << endl;
+                
+                
+                cout<< " Ingrese seguro social:  ";
+                cin >> SS;
+                cout << " " << endl;
+                setColor(92);
+                cout << " La solicitud se a enviado con exito. Se le estara notificando por outlook el \n";
+                cout << " estado de la solicitud y que procedimiento seria el siguiente. " << endl;
             }
             break; 
 
@@ -109,11 +118,17 @@ int main() {
             cout << " Tanto los estudiantes como los padres deben crear una Cuenta de Ayuda Estudiantil para obtener\n";
             cout << " una FSA ID antes de completar el formulario. " << endl;
             break; 
+            
+            case 3:
+            setColor(92);
+            cout << " Tu cuenta ha sido cerrada. Te deseamos éxito en adelante. "  << endl;
+            
+             break;
 
         default:
-            cout << " Opción no válida. Por favor ingrese 1 o 2 Gracias!!." << endl;
+        cout<< " " << endl;
+            cout << " Opción no válida. Por favor ingrese 1, 2 o 3 Gracias!!." << endl;
     }
 
     return 0;
 }
-
