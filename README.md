@@ -12,5 +12,10 @@ El programa incluye:
 ---
 
 ## How to Use
+1. https://github.com/PedroXCode/Simulador-Interactivo-para-Solicitud-de-FAFSA
+
+2. https://www.onlinegdb.com/online_c++_compiler#
+
+3. Codigo_Simulador_Interactivo_para_Solicitud_de_FAFSA
 
 
