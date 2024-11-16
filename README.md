@@ -14,13 +14,16 @@ El programa incluye:
 ## How to Use
 
  **Clona el repositorio en tu máquina local:**
+ 
 1. https://github.com/PedroXCode/Simulador-Interactivo-para-Solicitud-de-FAFSA
 
 
 **Compila el código usando un compilador de C++:**
+
 2. https://www.onlinegdb.com/online_c++_compiler#
 
 **Ejecuta el programama**
+
 3. https://github.com/PedroXCode/Simulador-Interactivo-para-Solicitud-de-FAFSA/blob/main/Codigo_Simulador_Interactivo_para_Solicitud_de_FAFSA
 
 
