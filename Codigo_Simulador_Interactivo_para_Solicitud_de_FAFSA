@@ -110,6 +110,7 @@ int main() {
             cout << " Tanto los estudiantes como los padres deben crear una Cuenta de Ayuda Estudiantil para obtener\n";
             cout << " una FSA ID antes de completar el formulario. " << endl;
             break;
+            
            // Aqui salimos del programa( Javier )
         case 3:
             setColor(92);
