@@ -26,7 +26,7 @@ El programa incluye:
 
 3. https://github.com/PedroXCode/Simulador-Interactivo-para-Solicitud-de-FAFSA/blob/main/Codigo_Simulador_Interactivo_para_Solicitud_de_FAFSA
 
-##License
+###License
 
 MIT License
 
