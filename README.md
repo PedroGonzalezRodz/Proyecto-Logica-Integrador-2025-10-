@@ -25,23 +25,43 @@ El programa incluye:
 **Ejecuta el programama**
 
 3. https://github.com/PedroXCode/Simulador-Interactivo-para-Solicitud-de-FAFSA/blob/main/Codigo_Simulador_Interactivo_para_Solicitud_de_FAFSA
+   
+## Version History
 
-###License
+### v1.0.0
+**Primera versión funcional del simulador.**  
+**Características:**
+- Inicio de sesión con validación de usuario y contraseña.
+- Registro de datos para solicitud FAFSA.
+- Información sobre las fechas de FAFSA 2024/2025.
+- Cierre de sesión con mensaje de despedida.
 
-MIT License
+---
 
-Copyright (c) 2024 PedroXCode
+### v1.1.0 (Futuro)
+**Planeadas:**
+- Implementación de almacenamiento de datos en archivos para persistencia.
+- Mejora en la validación de entradas para evitar caracteres inválidos.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
+# License
+
+## MIT License
+
+Copyright (c) 2024 Simulador-Interactivo-para-Solicitud-de-FAFSA
+
+## Permiso concedido:
+ Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
+## Condiciones
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 
+## Sin garantía:
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
