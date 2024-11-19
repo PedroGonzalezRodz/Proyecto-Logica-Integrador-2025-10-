@@ -89,6 +89,7 @@ int main() {
 
                 cout << "Ingrese seguro social: ";
                 cin >> SS;
+                cout << " " << endl;
                 setColor(92);
                 cout << " La solicitud se ha enviado con exito. Se le estara notificando por outlook el estado de la solicitud." << endl;
             }
